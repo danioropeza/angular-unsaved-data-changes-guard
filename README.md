@@ -8,6 +8,15 @@ In this project, you will see how to implement a simple guard for the use-case, 
 
 We achieve this by using some features of the newest versions of Angular.
 
+### Dependencies and versions ###
+
+- Angular: 17.0.2
+- Angular CLI: 17.0.0
+- Node: 20.9.0
+- npm: 10.1.0
+- bootstrap: 5.3.2
+- @ng-bootstrap/ng-bootstrap: 16.0.0-rc.0
+
 ### Install demo app
 
 Execute the following commands on the bash:
