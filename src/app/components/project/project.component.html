@@ -1,0 +1,18 @@
+<br />
+<p class="h2">Project</p>
+<hr class="hr" />
+<form [formGroup]="projectForm">
+  <div class="mb-3">
+    <label for="projectNameId" class="form-label">Project Name:</label>
+    <input type="text" class="form-control" id="projectNameId" formControlName="name">
+  </div>
+  <div class="mb-3">
+    <label for="countryId" class="form-label">Country:</label>
+    <input type="text" class="form-control" id="countryId" formControlName="country">
+  </div>
+  <div class="mb-3 form-check">
+    <input type="checkbox" class="form-check-input" id="importantId" formControlName="isImportant">
+    <label class="form-check-label" for="importantId">important</label>
+  </div>
+  <button type="submit" class="btn btn-primary">Create</button>
+</form>

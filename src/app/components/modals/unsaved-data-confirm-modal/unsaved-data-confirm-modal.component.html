@@ -1,0 +1,12 @@
+<div class="modal-header">
+  <h4 class="modal-title" id="modal-title"><i class="bi bi-exclamation-triangle-fill"></i> Unsaved Data</h4>
+</div>
+<div class="modal-body">
+  <p>
+    if you leave the page, your changes will be lost, are you sure you want to continue?
+  </p>
+</div>
+<div class="modal-footer">
+  <button type="button" class="btn btn-outline-secondary" (click)="modal.dismiss(false)">No</button>
+  <button type="button" ngbAutofocus class="btn btn-warning" (click)="modal.close(true)">Yes</button>
+</div>

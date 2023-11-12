@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "angular-simply-unsaved-data-changes-guard": {
+    "angular--unsaved-data-changes-guard": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/angular-simply-unsaved-data-changes-guard",
+            "outputPath": "dist/angular--unsaved-data-changes-guard",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
@@ -30,9 +30,13 @@
               "src/assets"
             ],
             "styles": [
+              "node_modules/bootstrap/scss/bootstrap.scss",
+              "node_modules/bootstrap-icons/font/bootstrap-icons.css",
               "src/styles.scss"
             ],
-            "scripts": []
+            "scripts": [
+              "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -62,10 +66,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "angular-simply-unsaved-data-changes-guard:build:production"
+              "buildTarget": "angular--unsaved-data-changes-guard:build:production"
             },
             "development": {
-              "buildTarget": "angular-simply-unsaved-data-changes-guard:build:development"
+              "buildTarget": "angular--unsaved-data-changes-guard:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -73,7 +77,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "buildTarget": "angular-simply-unsaved-data-changes-guard:build"
+            "buildTarget": "angular--unsaved-data-changes-guard:build"
           }
         },
         "test": {
